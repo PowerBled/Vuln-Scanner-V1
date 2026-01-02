@@ -1,0 +1,26 @@
+[package]
+name = "vuln_scanner"
+version = "0.2.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.0", features = ["full", "time", "sync", "macros", "rt-multi-thread"] }
+reqwest = { version = "0.11", features = ["json", "stream", "blocking", "cookies", "gzip", "brotli"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+ipnetwork = "0.20"
+whoami = "1.0"
+colored = "2.0"
+thiserror = "1.0"
+indicatif = "0.17"
+futures = "0.3"
+rayon = "1.10"
+dashmap = "5.5"
+crossbeam = "0.8"
+atomic-counter = "1.0"
+regex = "1.10"
+lazy_static = "1.4"
+url = "2.5"
+toml = "0.8"
+ctrlc = "3.4"
+rand = "0.8"
